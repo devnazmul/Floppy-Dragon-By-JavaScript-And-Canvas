@@ -1,0 +1,69 @@
+@font-face {
+  font-family: myF;
+  src: url(assets/TarrgetLaserItalic-pzxR.otf);
+}
+*{
+	margin:0;
+	font-family: myF;
+	user-select:none;
+}
+body{
+	background: url(assets/lobby.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	min-height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+#title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: absolute;
+}
+#title p{
+	color: #fff;
+}
+h1{
+
+	background: -webkit-linear-gradient(#720331, #CB2D3C);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 100;
+	-webkit-text-stroke-width: .5px;
+	-webkit-text-stroke-color: #fff;
+}
+#tap{
+	height: 80px;
+	width: auto;
+}
+#s{
+	display: flex;
+	top: 91%;
+	left: 37%;
+	letter-spacing: 5px;
+	position:absolute;
+	color:black;
+	font-size:1rem;
+	font-weight:bold;
+}
+#gameOver{
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: absolute;
+}
+button{
+	background: linear-gradient(0deg,#720331, #CB2D3C);
+	border: none;
+	border-radius: 10px;
+	padding: 10px 10px;
+	outline: none;
+	color:#fff;
+	font-weight: 100;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
