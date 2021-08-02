@@ -173,12 +173,12 @@ function start(){
 	setInterval(draw,10)
 }
 function restart(){
-	document.getElementById('gameOver').style.display='none'
+	document.getElementById('gameOver').style.display='none';
 	init()
-
 	score=0;
 }
 if (gameOverIs == true) {
+	document.getElementById('gameOver').style.display='block';
 	sound('assets/gameOver.mp3')
 }else{
 	sound('assets/bgS.mp3')
