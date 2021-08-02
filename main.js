@@ -125,7 +125,7 @@ function draw(){
 	}
 	
 	pillarX-=.02;
-	if(pillarX<-1-pillarWidth){
+	if(pillarX<5-pillarWidth){
 		sound('assets/point.mp3')
 		score+=1
 		pillarX=pillarX+450;
