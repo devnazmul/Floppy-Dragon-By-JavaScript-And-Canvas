@@ -126,7 +126,7 @@ function draw(){
 	
 	pillarX-=.02;
 	if(pillarX<100-pillarWidth){
-// 		sound('assets/point.mp3')
+		sound('assets/point.mp3')
 		score+=1
 		pillarX=pillarX+450;
 		rand = Math.ceil(Math.random()*(180-10)+10)
