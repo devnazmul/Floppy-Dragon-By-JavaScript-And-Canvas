@@ -125,7 +125,7 @@ function draw(){
 	}
 	
 	pillarX-=.02;
-	if(pillarX<0-pillarWidth){
+	if(pillarX<-1-pillarWidth){
 		sound('assets/point.mp3')
 		score+=1
 		pillarX=pillarX+450;
@@ -175,7 +175,7 @@ function draw(){
 
 function start(){
 	document.getElementById('title').style.display='none'
-	sound('assets/bgS.mp3')
+	sound('assets/bgS.mp3');
 	init()
 	gameOverIs = false
 	setInterval(draw,10)
@@ -187,7 +187,7 @@ function restart(){
 }
 if (gameOverIs == true) {
 	document.getElementById('gameOver').style.display='block';
-	sound('assets/gameOver.mp3')
+	sound('assets/gameOver.mp3');
 }else{
-	sound('assets/bgS.mp3')
+	sound('assets/bgS.mp3');
 }
