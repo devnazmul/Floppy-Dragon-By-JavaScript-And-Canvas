@@ -70,11 +70,19 @@ function updateFrame(){
 	 //Calculating the x coordinate for spritesheet 
 	 srcX = curFrame * width; 
 	}
-	addEventListener('touchstart',function playerUp (){
-		if(y > 15){
-			y-=40;
-		}
-	});
+	if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+		addEventListener('touchstart',function playerUp (){
+			if(y > 15){
+				y-=40;
+			}
+		});
+	} else {
+		addEventListener('click',function playerUp (){
+			if(y > 15){
+				y-=40;
+			}
+		});
+	}
 
 	function updatePlayer (){
 		y+=.009;
